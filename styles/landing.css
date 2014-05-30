@@ -1,0 +1,107 @@
+/*************************** landing-page ***************************/
+
+/****** DEFAULTS ******/
+
+  .landing {
+    background-color: #000;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0 auto;
+  }
+
+  .landing--header {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+  }
+
+  .landing--motto {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  .landing--horizontal-line {
+    width: 20%;
+    margin: 1em auto;
+  }
+
+  .landing--date {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+  }
+
+  .landing--subscribe.form {
+    margin: 0 auto;
+    width: 40em;
+  }
+
+  .landing--subscribe {
+    font-size: 1em;
+    height: 2.5em;
+    background: transparent;
+  }
+
+  .landing--subscribe:focus {
+    outline: none;
+  }
+
+  .landing--subscribe.email {
+    padding: 0;
+    width: 15em;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .landing--subscribe.button {
+    width: 15em;
+    border: 1px solid #fff;
+  }
+
+  .landing--subscribe.button:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+
+/****** PHONE ******/
+@media screen and (max-width: 568px) {
+
+  .landing {
+    height: 568px;
+  }
+
+  .landing--header {
+    font-weight: 700;
+    margin: 0 0 1em 0;
+  }
+
+  .landing--subscribe.button {
+    width: 10em;
+  }
+
+  .landing--subscribe.form {
+    width: 20em;
+  }
+
+}
+
+/****** IPAD / LAPTOP ******/
+@media screen and (min-width: 569px) {
+
+  .landing {
+    height: 768px;
+    max-width: 800px;
+  }
+
+  .landing--header {
+    font-weight: 100;
+    margin: 0 0 5em 0;
+  }
+
+}

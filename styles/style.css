@@ -1,0 +1,66 @@
+@import url('./landing.css');
+@import url('./about.css');
+
+/*************************** common ***************************/
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+ }
+
+ .hidden {
+  visibility: hidden;
+ }
+
+
+.container {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+  background-color: #000;
+}
+
+.container {height: 100%;}
+
+
+.popover {
+  position: relative;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  width: 15em;
+  height: 4em;
+  padding: 0.5em;
+  top: -1em;
+  left: 13%;
+}
+
+.popover:after,
+.popover:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.popover:after {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #fff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.popover:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
