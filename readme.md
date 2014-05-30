@@ -1,8 +1,6 @@
 #Commit website
 
 ##todo:
-+ minify css / scripts
-+ refactor css based on components and media queries
-+ conditionally load css based on media queries
-+ support ie8?
++ minify scripts
++ ie 7/8 are currently partially supported; need full support?
 + test on various mobile devices

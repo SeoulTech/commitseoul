@@ -2,15 +2,27 @@ var email = document.getElementById('email'),
   subscribe = document.getElementById('subscribe'),
   popover = document.getElementById('popover')
 
-email.addEventListener('keydown', hidePopover)
-subscribe.addEventListener('click', handleSubscriptionRequest)
+listenTo(email, 'keydown', hidePopover)
+listenTo(subscribe, 'click', handleSubscriptionRequest)
+
+function listenTo(obj, event, callback) {
+  if (obj.addEventListener) {
+    obj.addEventListener(event, callback, false)
+  } else {
+    obj.attachEvent('on' + event, callback)
+  }
+}
 
 function handleSubscriptionRequest(event) {
   var backend = 'https://docs.google.com/forms/d/1p4Hk3LKLK6NqPSrxlSXbQdoo-ndSJZ0MmWFpgiHbMNY/formResponse',
     validator = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/,
     iframe = document.createElement('iframe')
 
-  event.preventDefault()
+  if (event.preventDefault) {
+    event.preventDefault()
+  } else {
+    event.returnValue = false
+  }
 
   if (validator.test(email.value)) {
     iframe.name = 'iframe'
