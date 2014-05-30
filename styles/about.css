@@ -4,6 +4,9 @@
   background-color: #000;
   color: #fff;
   margin: 0 auto;
+  height: 100%;
+  padding: 1em 0;
+  max-width: 800px;
 }
 
 .about--header {
@@ -21,13 +24,8 @@
   font-size: 1.2em;
 }
 
-
 /****** PHONE ******/
 @media screen and (max-width: 568px) {
-  .about {
-    height: 568px;
-  }
-
   .about--header {
     margin: 0 0 1em 0;
     font-weight: 700;
@@ -36,11 +34,6 @@
 
 /****** IPAD / LAPTOP ******/
 @media screen and (min-width: 569px) {
-  .about {
-    max-width: 800px;
-    height: 768px;
-  }
-
   .about--header {
     margin: 0 0 3em 0;
     font-weight: 100;

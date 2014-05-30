@@ -5,8 +5,15 @@
   .landing {
     background-color: #000;
     text-align: center;
-    padding: 1em 0;
     margin: 0 auto;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%
   }
 
   .landing--header {
@@ -33,16 +40,18 @@
     letter-spacing: 0.2em;
   }
 
-  .landing--subscribe.form {
-    margin: 0 auto;
-    width: 40em;
-  }
-
   .landing--subscribe {
     font-size: 1em;
     height: 2.5em;
     background: transparent;
   }
+
+  .landing--subscribe.form {
+    margin: 0 auto;
+    width: 40em;
+    height: 10em;
+  }
+
 
   .landing--subscribe:focus {
     outline: none;
@@ -72,10 +81,6 @@
 /****** PHONE ******/
 @media screen and (max-width: 568px) {
 
-  .landing {
-    height: 568px;
-  }
-
   .landing--header {
     font-weight: 700;
     margin: 0 0 1em 0;
@@ -95,7 +100,6 @@
 @media screen and (min-width: 569px) {
 
   .landing {
-    height: 768px;
     max-width: 800px;
   }
 
