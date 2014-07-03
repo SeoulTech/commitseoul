@@ -23,8 +23,7 @@
   }
 
   .landing--tile {
-    margin-bottom: 8em;
-    margin-top: 0.8em;
+    margin: 0.8em 1em 8em;
     font-weight: 100;
   }
 
@@ -93,6 +92,10 @@
     font-weight: 700;
     font-size: 3em;
     margin: 0 0 1em 0;
+  }
+
+  .landing--tile {
+    font-weight: 400;
   }
 
   .landing--subscribe.button {
