@@ -22,6 +22,12 @@
     font-size: 4em;
   }
 
+  .landing--tile {
+    margin-bottom: 8em;
+    margin-top: 0.8em;
+    font-weight: 100;
+  }
+
   .landing--motto {
     font-size: 1.5em;
     letter-spacing: 0.3em;
@@ -47,7 +53,7 @@
   }
 
   .landing--subscribe.form {
-    margin: 0 auto;
+    margin: 3em auto;
     width: 40em;
     height: 10em;
   }
@@ -108,7 +114,7 @@
 
   .landing--header {
     font-weight: 100;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 0 0;
   }
 
 }
