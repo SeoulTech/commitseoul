@@ -1,3 +1,4 @@
+@import url('./normalize.css');
 @import url('./landing.css');
 @import url('./about.css');
 
@@ -21,25 +22,21 @@
   margin: auto;
 }
 
-.wrapper {
-}
-
 html, body {
   height: 100%;
-  background-color: #000;
+  background-color: #f5f5f5;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #fff;
+  color: #f5f5f5;
 }
-
 
 .popover {
   position: relative;
-  background: #fff;
-  border: 1px solid #fff;
-  color: #000;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #242424;
   width: 15em;
   height: 4em;
   padding: 0.5em;
@@ -61,14 +58,14 @@ body {
 
 .popover:after {
   border-color: rgba(0, 0, 0, 0);
-  border-top-color: #fff;
+  border-top-color: #f5f5f5;
   border-width: 10px;
   margin-left: -10px;
 }
 
 .popover:before {
   border-color: rgba(255, 255, 255, 0);
-  border-top-color: #fff;
+  border-top-color: #f5f5f5;
   border-width: 11px;
   margin-left: -11px;
 }
